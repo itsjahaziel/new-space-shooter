@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.backgroundImage {
+  z-index: 99;
+}
+.container {
+  display: grid;
+  place-items: center;
+  position: relative;
+  width: 80%;
+  height: 60%;
+}
+#faceSelection {
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+}
+.faces {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+.face-option {
+  width: 100px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: border-color 0.3s ease;
+}
+.face-option:hover {
+  border-color: rgb(255, 0, 242);
+}
+.face-option.selected {
+  border-color: rgb(255, 0, 212);
+}
+#credits {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  display: none;
+}
